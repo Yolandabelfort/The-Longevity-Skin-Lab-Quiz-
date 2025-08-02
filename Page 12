@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Page 12 – Skin Profile Summary</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #eaf3f7;
+      color: #000;
+      text-align: center;
+    }
+
+    header {
+      background: white;
+      padding: 20px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 600;
+      color: #1a1a1a;
+    }
+
+    .container {
+      padding: 24px 20px 60px;
+    }
+
+    h1 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 24px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 600;
+      font-size: 16px;
+      margin-bottom: 12px;
+    }
+
+    .tag {
+      background-color: #fce2e2;
+      color: #d00;
+      padding: 4px 10px;
+      border-radius: 16px;
+      font-size: 12px;
+    }
+
+    .profile-img {
+      width: 100%;
+      max-width: 160px;
+      margin: 16px auto;
+      border-radius: 12px;
+    }
+
+    .level-labels {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      margin: 4px 0 10px;
+      color: #555;
+    }
+
+    .bar-container {
+      position: relative;
+      height: 12px;
+      background: linear-gradient(to right, #cfe9ff 25%, #c3f3d3 25%, #fff7c4 25%, #ffe0b2 25%, #ffb6b6 100%);
+      border-radius: 8px;
+      margin: 0 auto 12px;
+      width: 100%;
+      max-width: 300px;
+    }
+
+    .marker {
+      position: absolute;
+      right: 10%;
+      top: -24px;
+      font-size: 10px;
+      background-color: #1a1a1a;
+      color: #fff;
+      padding: 2px 6px;
+      border-radius: 10px;
+    }
+
+    .dot {
+      position: absolute;
+      top: -6px;
+      right: 10%;
+      width: 16px;
+      height: 16px;
+      background: #1a1a1a;
+      border-radius: 50%;
+    }
+
+    .info-box {
+      background-color: #ffeaea;
+      padding: 12px;
+      border-radius: 10px;
+      text-align: left;
+      font-size: 14px;
+      margin-top: 12px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .box {
+      background: #fff;
+      padding: 16px;
+      border-radius: 12px;
+      font-size: 14px;
+      font-weight: 500;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    }
+
+    .box img {
+      width: 28px;
+      margin-bottom: 8px;
+    }
+
+    .continue-btn {
+      background-color: #1a1a1a;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      padding: 16px 0;
+      font-size: 16px;
+      font-weight: 600;
+      width: 90%;
+      max-width: 320px;
+      display: block;
+      margin: 40px auto 0;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .continue-btn:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">The Longevity</div>
+  </header>
+
+  <div class="container">
+    <h1>Summary of your Skin Profile</h1>
+
+    <div class="card">
+      <div class="card-header">
+        <span>Natural Estrogen Loss</span>
+        <span class="tag">High</span>
+      </div>
+
+      <img src="https://cdn.shopify.com/s/files/1/0728/4490/2557/files/Untitled_design-15.png?v=1752696411" alt="Profile Photo" class="profile-img" />
+
+      <div class="bar-container">
+        <div class="marker">Your level</div>
+        <div class="dot"></div>
+      </div>
+      <div class="level-labels">
+        <span>Low</span>
+        <span>Normal</span>
+        <span>Medium</span>
+        <span>High</span>
+      </div>
+
+      <div class="info-box">
+        <strong>🔴 HIGH level</strong><br>
+        High levels of natural estrogen loss can lead to deep wrinkles, sagginess and an uneven complexion making you look years older than you feel.
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="box">
+        <img src="https://cdn-icons-png.flaticon.com/512/3062/3062634.png" alt="Magnifying glass" />
+        Impact on Appearance: <br><strong>Noticeable</strong>
+      </div>
+      <div class="box">
+        <img src="https://cdn-icons-png.flaticon.com/512/992/992651.png" alt="Improvement" />
+        Room For Improvement: <br><strong>High</strong>
+      </div>
+      <div class="box">
+        <img src="https://cdn-icons-png.flaticon.com/512/4171/4171048.png" alt="Elasticity" />
+        Skin Elasticity: <br><strong>Low</strong>
+      </div>
+      <div class="box">
+        <img src="https://cdn-icons-png.flaticon.com/512/9676/9676822.png" alt="Collagen" />
+        Natural Estrogen Levels: <br><strong>Below Average</strong>
+      </div>
+    </div>
+
+    <button class="continue-btn" onclick="goToNext()">Continue →</button>
+  </div>
+
+  <script>
+    function goToNext() {
+      window.location.href = "page13.html";
+    }
+  </script>
+</body>
+</html>
