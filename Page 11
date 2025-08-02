@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Page 11 – You're a Fit</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #ffffff;
+      color: #000;
+      text-align: center;
+    }
+
+    header {
+      background: white;
+      padding: 20px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 600;
+      color: #1a1a1a;
+    }
+
+    .container {
+      padding: 30px 20px 60px;
+    }
+
+    h1 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .subtext {
+      font-size: 15px;
+      color: #333;
+      line-height: 1.6;
+      margin-bottom: 32px;
+      font-weight: 500;
+    }
+
+    .continue-btn {
+      background-color: #1a1a1a;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      padding: 16px 0;
+      font-size: 16px;
+      font-weight: 600;
+      width: 90%;
+      max-width: 320px;
+      display: block;
+      margin: 0 auto 40px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .continue-btn:hover {
+      opacity: 0.9;
+    }
+
+    .faces-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+      gap: 20px;
+      justify-content: center;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .face-img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #ddd;
+    }
+
+    @media (min-width: 768px) {
+      .face-img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">The Longevity</div>
+  </header>
+
+  <div class="container">
+    <h1>You're a perfect match! </h1>
+    <div class="subtext">
+      Based on your answers, you're a great fit for our proven treatment.<br><br>
+      Our Serum Renewal Complex™ is safe, pain-free, and designed specifically for your skin type.<br><br>
+      Tap “Continue” below to see how it works — and how it can help <strong>you</strong> today.
+    </div>
+
+    <button class="continue-btn" onclick="goToNextPage()">Continue →</button>
+
+    <div class="faces-grid">
+      <img class="face-img" src="https://cdn.shopify.com/s/files/1/0728/4490/2557/files/a4ed9f31-3bf3-43bf-adbc-aedb55bb3318.png?v=1752738239" alt="Face 1" />
+      <img class="face-img" src="https://cdn.shopify.com/s/files/1/0728/4490/2557/files/33087b30-bd44-4bd4-a2ea-c22ed8553c28_1.png?v=1752737619" alt="Face 2" />
+      <img class="face-img" src="https://cdn.shopify.com/s/files/1/0728/4490/2557/files/33087b30-bd44-4bd4-a2ea-c22ed8553c28.png?v=1752737588" alt="Face 3" />
+      <img class="face-img" src="https://cdn.shopify.com/s/files/1/0728/4490/2557/files/Untitled_design-15.png?v=1752696411" alt="Face 4" />
+      <img class="face-img" src="https://cdn.shopify.com/s/files/1/0728/4490/2557/files/60594597-2f22-42f2-9b22-61b26597daca.png?v=1752675471" alt="Face 5" />
+    </div>
+  </div>
+
+  <script>
+    function goToNextPage() {
+      window.location.href = "advertorial.html";
+    }
+  </script>
+</body>
+</html>
