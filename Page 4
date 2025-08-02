@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Visible Wrinkle Areas – The Longevity</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #ffffff;
+      color: #000;
+      text-align: center;
+    }
+
+    header {
+      background: white;
+      padding: 20px 0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 600;
+      color: #1a1a1a;
+    }
+
+    .container {
+      padding: 24px 20px 40px;
+    }
+
+    h1 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .subtext {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 24px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      justify-items: center;
+    }
+
+    .option {
+      width: 140px;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 2px solid transparent;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .option img {
+      width: 100%;
+      display: block;
+      height: auto;
+    }
+
+    .option span {
+      display: block;
+      background-color: #1a1a1a;
+      color: white;
+      font-size: 14px;
+      padding: 10px 5px;
+      font-weight: 500;
+    }
+
+    .option.selected {
+      border: 2px solid #1a1a1a;
+    }
+
+    .continue-btn {
+      background-color: #1a1a1a;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      padding: 16px 0;
+      font-size: 16px;
+      font-weight: 600;
+      width: 90%;
+      max-width: 320px;
+      margin: 40px auto 0;
+      display: block;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .continue-btn:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">The Longevity</div>
+  </header>
+
+  <div class="container">
+    <h1>Which of the following do you want to visibly reduce?</h1>
+    <div class="subtext">(Choose all that apply)</div>
+
+    <div class="grid">
+      <div class="option" onclick="toggleSelect(this)">
+        <img src="https://cdn.shopify.com/s/files/1/0728/4490/2557/files/mouth.png" alt="Mouth Wrinkles">
+        <span>Mouth Wrinkles</span>
+      </div>
+
+      <div class="option" onclick="toggleSelect(this)">
+        <img src="https://cdn.shopify.com/s/files/1/0728/4490/2557/files/forehead.png" alt="Forehead Wrinkles">
+        <span>Forehead Wrinkles</span>
+      </div>
+
+      <div class="option" onclick="toggleSelect(this)">
+        <img src="https://cdn.shopify.com/s/files/1/0728/4490/2557/files/eye.png" alt="Eye Wrinkles or Crows Feet">
+        <span>Eye Wrinkles or Crows Feet</span>
+      </div>
+
+      <div class="option" onclick="toggleSelect(this)">
+        <img src="https://cdn.shopify.com/s/files/1/0728/4490/2557/files/neck.png" alt="Turkey Neck">
+        <span>Turkey Neck</span>
+      </div>
+    </div>
+
+    <button class="continue-btn" onclick="goToNextPage()">Continue →</button>
+  </div>
+
+  <script>
+    function toggleSelect(el) {
+      el.classList.toggle('selected');
+    }
+
+    function goToNextPage() {
+      window.location.href = "page5.html";
+    }
+  </script>
+</body>
+</html>
