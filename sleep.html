@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Page 8 – Stress Level</title>
+  <title>Page 7 – Sleep Question</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
     body {
@@ -68,18 +68,19 @@
   </header>
 
   <div class="container">
-    <h1>I feel the pressure of stress...</h1>
+    <h1>How much sleep do you usually get? 😴</h1>
 
-    <button class="btn" onclick="goToNext()"><span>😰</span>Every day, constantly</button>
-    <button class="btn" onclick="goToNext()"><span>😬</span>Most days, especially at work</button>
-    <button class="btn" onclick="goToNext()"><span>😟</span>Mainly during busy periods</button>
-    <button class="btn" onclick="goToNext()"><span>😎</span>I rarely feel stressed</button>
+    <button class="btn" ><span>😴</span>More than 8 hours</button>
+    <button class="btn" ><span>👍</span>7–8 hours</button>
+    <button class="btn" ><span>🥱</span>Less than 6 hours</button>
+    <button class="btn" ><span>😩</span>My sleep is unpredictable</button>
   </div>
 
+  <script src="./jquery.min.js"></script>
   <script>
-    function goToNext() {
-      window.location.href = "page9.html";
-    }
+    $('.btn').on('click', function () {
+      window.location.href = './pressure.html'
+    })
   </script>
 </body>
 </html>

@@ -129,17 +129,14 @@
       </div>
     </div>
 
-    <button class="continue-btn" onclick="goToNextPage()">Continue →</button>
+    <button class="continue-btn" >Continue →</button>
   </div>
 
+  <script src="./jquery.min.js"></script>
   <script>
-    function toggleSelect(el) {
-      el.classList.toggle('selected');
-    }
-
-    function goToNextPage() {
-      window.location.href = "page5.html";
-    }
+    $('.continue-btn').on('click', function () {
+      window.location.href = './patent-pending.html'
+    })
   </script>
 </body>
 </html>

@@ -101,7 +101,7 @@
       <img src="https://cdn.shopify.com/s/files/1/0728/4490/2557/files/5c1575fe-455b-4455-9a81-f9a899a6d616.png?v=1752752148" />
     </div>
 
-    <button class="continue-btn" onclick="goToNextPage()">Continue →</button>
+    <button class="continue-btn">Continue →</button>
   </div>
 
   <script>
@@ -114,9 +114,12 @@
       images[current].classList.add("active");
     }, 4000);
 
-    function goToNextPage() {
-      window.location.href = "page6.html";
-    }
+  </script>
+  <script src="./jquery.min.js"></script>
+  <script>
+    $('.continue-btn').on('click', function () {
+      window.location.href = './skin-exposed.html'
+    })
   </script>
 </body>
 </html>

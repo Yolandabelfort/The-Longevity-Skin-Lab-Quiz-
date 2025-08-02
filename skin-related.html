@@ -105,11 +105,11 @@
 
     <button class="continue-btn">Continue →</button>
   </div>
-
+  <script src="./jquery.min.js"></script>
   <script>
-    function toggleSelect(btn) {
-      btn.classList.toggle('selected');
-    }
+    $('.btn').on('click', function () {
+      window.location.href = './wrinkles.html'
+    })
   </script>
 </body>
 </html>
