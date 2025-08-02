@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Page 9 – Skin Tone</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #ffffff;
+      color: #000;
+      text-align: center;
+    }
+
+    header {
+      background: white;
+      padding: 20px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 600;
+      color: #1a1a1a;
+    }
+
+    .container {
+      padding: 24px 20px 40px;
+    }
+
+    h1 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      width: 100%;
+      max-width: 300px;
+      margin: 12px auto;
+      padding: 14px 16px;
+      background-color: #fff;
+      border: 2px solid #1a1a1a;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .btn:hover {
+      background-color: #f1f1f1;
+    }
+
+    .swatch {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      margin-right: 12px;
+      border: 1px solid #999;
+    }
+
+    .fair    { background-color: #fce5d2; }
+    .light   { background-color: #f8dbcc; }
+    .medium  { background-color: #a05f41; }
+    .dark    { background-color: #5c2e0a; }
+    .vdark   { background-color: #4a2a09; }
+
+    .unknown {
+      font-size: 20px;
+      color: red;
+      margin-right: 12px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">The Longevity</div>
+  </header>
+
+  <div class="container">
+    <h1>What is your skin tone?</h1>
+
+    <button class="btn" onclick="goToNext()"><span class="swatch fair"></span>Fair</button>
+    <button class="btn" onclick="goToNext()"><span class="swatch light"></span>Light</button>
+    <button class="btn" onclick="goToNext()"><span class="swatch medium"></span>Medium</button>
+    <button class="btn" onclick="goToNext()"><span class="swatch dark"></span>Dark</button>
+    <button class="btn" onclick="goToNext()"><span class="swatch vdark"></span>Very Dark</button>
+    <button class="btn" onclick="goToNext()"><span class="unknown">?</span>I am not sure</button>
+  </div>
+
+  <script>
+    function goToNext() {
+      window.location.href = "page10.html";
+    }
+  </script>
+</body>
+</html>
