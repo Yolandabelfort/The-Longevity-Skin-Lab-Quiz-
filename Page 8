@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Page 8 – Stress Level</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #ffffff;
+      color: #000;
+      text-align: center;
+    }
+
+    header {
+      background: white;
+      padding: 20px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 600;
+      color: #1a1a1a;
+    }
+
+    .container {
+      padding: 24px 20px 40px;
+    }
+
+    h1 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      max-width: 300px;
+      margin: 12px auto;
+      padding: 14px;
+      background-color: #fff;
+      border: 2px solid #1a1a1a;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+      text-align: left;
+    }
+
+    .btn:hover {
+      background-color: #f1f1f1;
+    }
+
+    .btn span {
+      margin-right: 10px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">The Longevity</div>
+  </header>
+
+  <div class="container">
+    <h1>I feel the pressure of stress...</h1>
+
+    <button class="btn" onclick="goToNext()"><span>😰</span>Every day, constantly</button>
+    <button class="btn" onclick="goToNext()"><span>😬</span>Most days, especially at work</button>
+    <button class="btn" onclick="goToNext()"><span>😟</span>Mainly during busy periods</button>
+    <button class="btn" onclick="goToNext()"><span>😎</span>I rarely feel stressed</button>
+  </div>
+
+  <script>
+    function goToNext() {
+      window.location.href = "page9.html";
+    }
+  </script>
+</body>
+</html>
